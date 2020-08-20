@@ -669,3 +669,38 @@ header {
   margin-left: -800px;
   width: calc(100% + 800px) !important;
   position: relative; }
+  #s6 .content {
+    width: calc(100% + 400px);
+    height: 100%;
+    margin-left: 400px;
+    position: relative;
+    margin-right: 400px; }
+  #s6 .c1,
+  #s6 .c2,
+  #s6 .c3,
+  #s6 .c4,
+  #s6 .c5,
+  #s6 .c6,
+  #s6 .c8,
+  #s6 .c7,
+  #s6 .c9,
+  #s6 .c10 {
+    background-image: url("../img/slide6/Screen-6 Triangle-1.svg"); }
+  #s6 .c1 {
+    height: 142px;
+    top: 0;
+    left: -100px;
+    width: 142px; }
+  #s6 .c2 {
+    background-image: url("../img/slide6/Screen-6 Triangle-2.svg");
+    height: 864px;
+    top: inherit;
+    left: -450px;
+    width: 864px;
+    bottom: -500px; }
+  #s6 .c3 {
+    width: 150px;
+    height: 150px;
+    top: inherit;
+    bottom: 100px;
+    left: 0; }

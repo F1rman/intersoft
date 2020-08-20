@@ -3,6 +3,6 @@ $(document).ready(()=>{
     mousewheel: true,
     spaceBetween:800,
    hashNavigation: true,
-    freeMode:true
+    // freeMode:true
  });
 })

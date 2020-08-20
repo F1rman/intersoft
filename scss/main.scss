@@ -842,4 +842,46 @@ left: 1791px;
 	margin-left: -800px;
 width: calc(100% + 800px) !important;
 position: relative;
+.content{
+	width: calc(100% + 400px);
+	height: 100%;
+	margin-left: 400px;
+	position: relative;
+			margin-right: 400px;
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c8,
+.c7,
+.c9,
+.c10,
+ {
+	background-image: url("../img/slide6/Screen-6 Triangle-1.svg");
+}
+.c1{
+	height: 142px;
+	top: 0;
+	left: -100px;
+	width: 142px;
+}
+.c2{
+	background-image: url("../img/slide6/Screen-6 Triangle-2.svg");
+height: 864px;
+top: inherit;
+left: -450px;
+width: 864px;
+bottom: -500px;
+}
+.c3{
+	width: 150px;
+  height: 150px;
+	top: inherit;
+	bottom: 100px;
+	left: 0;
+
+}
 }
