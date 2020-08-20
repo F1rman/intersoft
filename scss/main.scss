@@ -691,4 +691,155 @@ header {
 #s4{
 	margin-left: -800px;
 width: calc(100% + 800px) !important;
+position: relative;
+.content{
+width: calc(100% + 400px);
+height: 100%;
+margin-left: 400px;
+position: relative;
+    margin-right: 400px;
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+ {
+	background-image: url("../img/slide4/Screen-4 Rectangle-1.svg");
+}
+.c1{
+	top: 40px;
+left: -100px;
+height: 319px;
+width: 319px;
+}
+.c2{
+	background-image: url("../img/slide4/Screen-4 Rectangle-4.svg");
+	width: 71px;
+  height: 71px;
+	top: 109px;
+	left: 1024px;
+}
+.c3{
+	background-image: url('../img/slide4/Screen-4 Rectangle-5.svg');
+width: 738px;
+height: 738px;
+top: -400px;
+left: 1030px;
+}
+.c4{
+	background-image: url("../img/slide4/Screen-4 Rectangle-2.svg");
+top: 719px;
+left: 553px;
+width: 269px;
+height: 194px;
+}
+.c5{
+	background-image: url("../img/slide4/Screen-4 Rectangle-3.svg");
+top: 821px;
+left: 410px;
+width: 66px;
+height: 66px;
+}
+.c6{
+	background-image: url("../img/slide4/Screen-4 Rectangle-1-2.svg");
+	top: 400px;
+	left: 1710px;
+	width: 319px;
+	height: 319px;
+}
+}
+#s5{
+	margin-left: -800px;
+width: calc(100% + 800px) !important;
+position: relative;
+ background-color: #e73d11;
+ .content{
+	 width: calc(100% + 400px);
+	 height: 100%;
+	 margin-left: 400px;
+	 position: relative;
+	     margin-right: 400px;
+ }
+ .c1,
+ .c10,
+ .c2,
+ .c3,
+ .c4,
+ .c5,
+ .c6,
+ .c7,
+ .c8,
+ .c9 {
+	 background-image: url("../img/slide1/oval.svg");
+
+ }
+ .c1{
+	 width: 284px;
+	 height: 284px;
+	 bottom: 0;
+	 left: -100px;
+	 top: inherit;
+ }
+ .c2{
+	 width: 209px;
+  height: 209px;
+	left: 66px;
+	top: 370px;
+ }
+ .c3{
+	 width: 64px;
+  height: 64px;
+	top: 515px;
+	left: 267px;
+ }
+ .c4{
+	 width: 804px;
+	 height: 804px;
+	 left: 398px;
+	 top: 48px;
+ }
+ .c5{
+	 width: 64px;
+  height: 64px;
+	top: 745px;
+	left: 1102px;
+ }
+ .c6{
+	 width: 43px;
+  height: 43px;
+	left: 1325px;
+	top: 328px;
+ }
+ .c7{
+	 width: 277px;
+  height: 277px;
+	top: 11px;
+	left: 1174px;
+ }
+ .c8{
+	 width: 86px;
+  height: 86px;
+	top: 275px;
+	left: 1391px;
+ }
+ .c9{
+	 width: 400px;
+height: 400px;
+top: 58px;
+left: 1591px;
+ }
+ .c10{
+	 width: 105px;
+   height: 105px;
+top: 774px;
+left: 1791px;
+ }
+}
+#s6{
+	background-color: #131313;
+	margin-left: -800px;
+width: calc(100% + 800px) !important;
+position: relative;
 }
