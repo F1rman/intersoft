@@ -134,7 +134,7 @@ body {
   background-color: #e73d11; }
 
 .bg {
-  background-image: url(../img/slide1/star-1.svg);
+  background-image: url("../img/slide1/star-1.svg");
   width: 100px;
   height: 100px;
   top: 0;
@@ -217,9 +217,18 @@ header {
   #s1 .star {
     height: 633px;
     width: 310px; }
-  #s1 .c1, #s1 .c2, #s1 .c3, #s1 .c4, #s1 .c5, #s1 .c6, #s1 .c7, #s1 .c8, #s1 .c9 {
-    background-image: url(../img/slide1/oval.svg); }
-  #s1 .c1, #s1 .c4 {
+  #s1 .c1,
+  #s1 .c2,
+  #s1 .c3,
+  #s1 .c4,
+  #s1 .c5,
+  #s1 .c6,
+  #s1 .c7,
+  #s1 .c8,
+  #s1 .c9 {
+    background-image: url("../img/slide1/oval.svg"); }
+  #s1 .c1,
+  #s1 .c4 {
     width: 46px;
     height: 46px;
     top: 167px;
@@ -243,14 +252,14 @@ header {
     top: 420px;
     left: 1380px; }
   #s1 .c6 {
-    background-image: url(../img/slide1/oval.svg);
+    background-image: url("../img/slide1/oval.svg");
     width: 570px;
     height: 344px;
     bottom: 0;
     left: 785px;
     top: inherit; }
   #s1 .c7 {
-    background-image: url(../img/slide1/oval.svg);
+    background-image: url("../img/slide1/oval.svg");
     width: 659px;
     background-size: cover;
     background-position: bottom;
@@ -311,7 +320,14 @@ header {
     margin-left: 400px;
     position: relative;
     margin-right: 400px; }
-    #s2 .content .c1, #s2 .content .c2, #s2 .content .c3, #s2 .content .c4, #s2 .content .c5, #s2 .content .c6, #s2 .content .c7, #s2 .content .c8 {
+    #s2 .content .c1,
+    #s2 .content .c2,
+    #s2 .content .c3,
+    #s2 .content .c4,
+    #s2 .content .c5,
+    #s2 .content .c6,
+    #s2 .content .c7,
+    #s2 .content .c8 {
       background-image: url("../img/slide2/Screen-2 Triangle -1.svg");
       background-size: contain; }
     #s2 .content .c1 {
@@ -350,40 +366,34 @@ header {
       width: 210px;
       height: 242px;
       top: 55px;
-      left: inherit;
-      z-index: 4;
-      right: -200px; }
+      left: 1390px;
+      z-index: 4; }
     #s2 .content .c7 {
       background-image: url("../img/slide2/Screen-2 Triangle -6.svg");
       width: 81px;
       height: 101px;
-      top: 78px;
-      left: 812px;
       top: 204px;
-      left: inherit;
-      z-index: 4;
-      right: -200px; }
+      left: 1509px;
+      z-index: 4; }
     #s2 .content .c8 {
       background-image: url("../img/slide2/Screen-2 Triangle -7.svg");
-      top: inherit;
-      left: inherit;
+      left: 1400px;
       width: 509.5px;
-      right: -560px;
       bottom: -71px;
+      top: inherit;
       height: 528px; }
     #s2 .content .c9 {
       background-image: url("../img/slide2/Screen-2 Triangle -8.svg");
       width: 252px;
       height: 228px;
       top: inherit;
-      left: inherit;
-      bottom: -50px;
-      right: -600px; }
+      left: 1700px;
+      bottom: -50px; }
   #s2 .about {
     width: 1172px;
     position: absolute;
     z-index: 3;
-    right: 60px;
+    left: 268px;
     top: 209px; }
     #s2 .about h2 {
       font-size: 72px;
