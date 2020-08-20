@@ -429,6 +429,9 @@ header {
     position: relative;
     margin-left: 400px; }
   #s3 .c1,
+  #s3 .c10,
+  #s3 .c11,
+  #s3 .c12,
   #s3 .c2,
   #s3 .c3,
   #s3 .c4,
@@ -488,6 +491,23 @@ header {
     top: 473px;
     width: 27px;
     height: 27px; }
+  #s3 .c10 {
+    left: 1368px;
+    top: 422px;
+    width: 400px;
+    height: 400px;
+    z-index: 1; }
+  #s3 .c11 {
+    left: 1940px;
+    top: 161px;
+    width: 31px;
+    height: 31px; }
+  #s3 .c12 {
+    left: 1860px;
+    top: inherit;
+    width: 234px;
+    height: 234px;
+    bottom: 0; }
   #s3 .about {
     width: 1172px;
     max-width: 985px;
@@ -516,3 +536,7 @@ header {
         letter-spacing: normal;
         color: #ffffff;
         text-align: left; }
+
+#s4 {
+  margin-left: -800px;
+  width: calc(100% + 800px) !important; }
