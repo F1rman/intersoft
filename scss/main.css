@@ -49,3 +49,21 @@ body {
   list-style: none;
   padding: 0;
   z-index: 1; }
+
+#s1 {
+  background-color: #e73d11; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 160px;
+  box-sizing: border-box; }
+  header .logo {
+    background-image: url(../img/logo.svg);
+    width: 132px;
+    height: 24px;
+    background-size: contain; }
