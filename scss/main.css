@@ -423,4 +423,96 @@ header {
         text-align: left; }
 
 #s3 {
+  width: calc(100% + 800px) !important;
   margin-left: -800px; }
+  #s3 .content {
+    position: relative;
+    margin-left: 400px; }
+  #s3 .c1,
+  #s3 .c2,
+  #s3 .c3,
+  #s3 .c4,
+  #s3 .c5,
+  #s3 .c6,
+  #s3 .c7,
+  #s3 .c8,
+  #s3 .c9 {
+    background-image: url("../img/slide1/oval.svg"); }
+  #s3 .c1 {
+    top: 334px;
+    left: -80px;
+    width: 176px;
+    height: 176px; }
+  #s3 .c2 {
+    width: 40px;
+    height: 40px;
+    top: 500px;
+    left: -100px; }
+  #s3 .c3 {
+    width: 468px;
+    height: 368px;
+    top: inherit;
+    bottom: -80px;
+    background-size: cover;
+    left: -150px; }
+  #s3 .c4 {
+    background-image: url("../img/slide3/illustration-1.svg");
+    left: 1143px;
+    top: 73px;
+    width: 429px;
+    height: 779px; }
+  #s3 .c5 {
+    background-image: url("../img/slide3/Screen-3 Star-1-2.svg");
+    left: 174px;
+    top: 0;
+    width: 978px;
+    height: 683px; }
+  #s3 .c6 {
+    background-image: url("../img/slide3/Screen-3 Oval-10-2.svg");
+    left: 645px;
+    top: 0;
+    width: 137px;
+    height: 49px; }
+  #s3 .c7 {
+    left: 825px;
+    top: 622px;
+    width: 44px;
+    height: 44px; }
+  #s3 .c8 {
+    left: 704px;
+    top: 568px;
+    width: 109px;
+    height: 109px; }
+  #s3 .c9 {
+    left: 982px;
+    top: 473px;
+    width: 27px;
+    height: 27px; }
+  #s3 .about {
+    width: 1172px;
+    max-width: 985px;
+    position: absolute;
+    z-index: 3;
+    left: 160px;
+    top: 146px; }
+    #s3 .about h2 {
+      text-align: left; }
+      #s3 .about h2 span {
+        color: #f7ad01; }
+      #s3 .about h2 .after::after {
+        background: #f7ad01; }
+    #s3 .about .about_p {
+      margin-top: 40px;
+      display: flex;
+      padding: 0 16px 0 109px; }
+      #s3 .about .about_p p {
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        max-width: 507px;
+        line-height: 1.33;
+        padding: 0 16px;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-align: left; }

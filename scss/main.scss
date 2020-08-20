@@ -534,5 +534,130 @@ header {
 }
 
 #s3 {
+	width: calc(100% + 800px) !important;
+
+	.content {
+		position: relative;
+		margin-left: 400px;
+	}
 	margin-left: -800px;
+
+	.c1,
+	.c2,
+	.c3,
+	.c4,
+	.c5,
+	.c6,
+	.c7,
+	.c8,
+	.c9 {
+		background-image: url("../img/slide1/oval.svg");
+	}
+
+	.c1 {
+		top: 334px;
+		left: -80px;
+		width: 176px;
+		height: 176px;
+	}
+
+	.c2 {
+		width: 40px;
+		height: 40px;
+		top: 500px;
+		left: -100px;
+	}
+
+	.c3 {
+		width: 468px;
+		height: 368px;
+		top: inherit;
+		bottom: -80px;
+		background-size: cover;
+		left: -150px;
+	}
+
+	.c4 {
+		background-image: url("../img/slide3/illustration-1.svg");
+		left: 1143px;
+		top: 73px;
+		width: 429px;
+		height: 779px;
+	}
+
+	.c5 {
+		background-image: url("../img/slide3/Screen-3 Star-1-2.svg");
+		left: 174px;
+		top: 0;
+		width: 978px;
+		height: 683px;
+	}
+
+	.c6 {
+		background-image: url("../img/slide3/Screen-3 Oval-10-2.svg");
+		left: 645px;
+		top: 0;
+		width: 137px;
+		height: 49px;
+	}
+
+	.c7 {
+		left: 825px;
+		top: 622px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.c8 {
+		left: 704px;
+		top: 568px;
+		width: 109px;
+		height: 109px;
+	}
+
+	.c9 {
+		left: 982px;
+		top: 473px;
+		width: 27px;
+		height: 27px;
+	}
+
+	.about {
+		width: 1172px;
+    max-width: 985px;
+    position: absolute;
+    z-index: 3;
+    left: 160px;
+    top: 146px;
+
+		h2 {
+			text-align: left;
+			span{
+				color: #f7ad01;
+
+			}
+			.after::after{
+				    background: #f7ad01;
+			}
+		}
+
+		.about_p {
+			margin-top: 40px;
+			display: flex;
+			padding: 0 16px 0 109px;
+
+			p {
+				font-size: 24px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				max-width: 507px;
+				line-height: 1.33;
+				padding: 0 16px;
+				letter-spacing: normal;
+				color: #ffffff;
+				text-align: left;
+			}
+		}
+	}
 }
