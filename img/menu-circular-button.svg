@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-circular-button</title>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-Intersoft" transform="translate(-316.000000, -15.000000)">
+            <g id="menu-circular-button" transform="translate(316.000000, 15.000000)">
+                <path d="M12,24.0005333 C5.38288349,24.0005333 0,18.6174065 0,12.0010759 C0,5.38420274 5.38288349,0.000533333333 12,0.000533333333 C18.6171165,0.000533333333 24,5.3836602 24,12.0010759 C24,18.6184916 18.6160315,24.0005333 12,24.0005333 Z" id="Shape" fill="#F7AD01" fill-rule="nonzero"></path>
+                <path d="M16.9994631,14 L17,16 L7,16 L7,14 L16.9994631,14 Z M16.9994631,11 L17,13 L7,13 L7,11 L16.9994631,11 Z M16.9994631,8 L17,10 L7,10 L7,8 L16.9994631,8 Z" id="Combined-Shape" fill="#131313"></path>
+            </g>
+        </g>
+    </g>
+</svg>

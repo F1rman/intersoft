@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow right button</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Intersoft-UI" transform="translate(-438.000000, -808.000000)" fill="#F7AD01">
+            <g id="button" transform="translate(160.000000, 784.000000)">
+                <path d="M288.670301,32.7736645 L285.950094,35.4746818 L287.044116,36.5714286 L291.67737,32 L287.044039,27.4285714 L285.950016,28.5253182 L288.670301,31.2263355 L278.000034,31.2261213 C278.389282,27.1709507 281.805876,24 285.963085,24 C290.381363,24 293.963085,27.581722 293.963085,32 C293.963085,36.418278 290.381363,40 285.963085,40 C281.805876,40 278.389282,36.8290493 278.000034,32.7738787 L288.670301,32.7736645 Z" id="arrow-right-button"></path>
+            </g>
+        </g>
+    </g>
+</svg>

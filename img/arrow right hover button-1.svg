@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow right hover button-1</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Intersoft-UI" transform="translate(-906.000000, -642.000000)" fill="#FFFFFF">
+            <g id="Buttom-Copy" transform="translate(594.000000, 632.000000)">
+                <path d="M328.005452,23.1604967 L323.925141,27.2120227 L325.566175,28.8571429 L332.516055,22 L325.566058,15.1428571 L323.925025,16.7879773 L328.005452,20.8395033 L312.000015,20.8395649 C312.583708,14.7566257 317.708683,10 323.944627,10 C330.572044,10 335.944627,15.372583 335.944627,22 C335.944627,28.627417 330.572044,34 323.944627,34 C317.708683,34 312.583708,29.2433743 312.000015,23.1604351 L328.005452,23.1604967 Z" id="arrow-right-hover-button-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
