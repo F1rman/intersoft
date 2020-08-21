@@ -27,6 +27,12 @@ $(document).ready(()=>{
    swiper_s4.slideNext();
 
  })
+ $('.close').click(function(){
+   $('.modal1').toggleClass('active')
+ });
+ $('#s4 .flex .h3_slide.develop').click(function(){
+   $('.modal1').toggleClass('active')
+ });
 
  $('#menu  a').click(function(){
    $('#menu  a').removeClass("active");
