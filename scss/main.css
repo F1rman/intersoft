@@ -76,7 +76,7 @@ body {
 
 .btn_contact {
   box-sizing: border-box;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   width: 342px;
   height: 64px;
   box-shadow: 4px 4px 0 0 #ffffff;
@@ -152,13 +152,13 @@ body {
 .modal1 {
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   position: fixed; }
 
 .modal1.active {
   visibility: visible;
   opacity: 1;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   position: fixed;
   display: flex;
   padding: 32px;
@@ -222,6 +222,24 @@ body {
     .modal1.active .flex_content .text {
       margin-bottom: 32px; }
 
+.modal1.active.modal2 .illustration {
+  background-image: url("../img/slide4/illustration-4.svg"); }
+
+.modal1.active.modal3 .illustration {
+  background-image: url("../img/slide4/illustration-5.svg"); }
+
+.modal1.active.modal4 .illustration {
+  background-image: url("../img/slide4/illustration-6.svg"); }
+
+.modal1.active.modal5 .illustration {
+  background-image: url("../img/slide4/illustration-7.svg"); }
+
+.modal1.active.modal6 .illustration {
+  background-image: url("../img/slide4/illustration-8.svg"); }
+
+.modal1.active.modal7 .illustration {
+  background-image: url("../img/slide4/illustration-9.svg"); }
+
 .next_page_btn {
   width: 32px;
   height: 32px;
@@ -232,7 +250,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  z-index: 4; }
+  z-index: 1231234; }
 
 #s2 .next_page_btn {
   background-image: url("../img/arrow screen-2.svg"); }
@@ -843,6 +861,12 @@ header {
     margin-left: 400px;
     position: relative;
     margin-right: 400px; }
+    #s5 .content .about {
+      position: absolute;
+      left: 446px;
+      width: 709px;
+      top: 272px;
+      z-index: 12; }
   #s5 .c1,
   #s5 .c10,
   #s5 .c2,

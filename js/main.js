@@ -28,12 +28,29 @@ $(document).ready(()=>{
 
  })
  $('.close').click(function(){
-   $('.modal1').toggleClass('active')
+   $('.modal1').removeClass('active')
  });
- $('#s4 .flex .h3_slide.develop').click(function(){
-   $('.modal1').toggleClass('active')
+ $('#s4 .flex .develop').click(function(){
+   $('.modal1.modal0').toggleClass('active')
  });
-
+ $('#s4 .flex .site').click(function(){
+   $('.modal2.modal1').toggleClass('active')
+ });
+ $('#s4 .flex .ux').click(function(){
+   $('.modal1.modal3').toggleClass('active')
+ });
+ $('#s4 .flex .quality').click(function(){
+   $('.modal1.modal4').toggleClass('active')
+ });
+ $('#s4 .flex .suport').click(function(){
+   $('.modal1.modal5').toggleClass('active')
+ });
+ $('#s4 .flex .crm').click(function(){
+   $('.modal1.modal6').toggleClass('active')
+ });
+ $('#s4 .flex .BackOffice').click(function(){
+   $('.modal1.modal7').toggleClass('active')
+ });
  $('#menu  a').click(function(){
    $('#menu  a').removeClass("active");
    $(this).addClass("active");
