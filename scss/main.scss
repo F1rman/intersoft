@@ -444,6 +444,7 @@ header {
 	font-style: italic;
 	line-height: 0.67;
 	letter-spacing: normal;
+	transition: all 0.3s linear;
 	color: #f7ad01;
 	display: flex;
 	width: 100%;
@@ -459,6 +460,7 @@ header {
 		position: relative;
 		height: 100%;
 		cursor: pointer;
+		transition: all 0.3s linear;
 
 		&:hover {
 			color: #fff;
@@ -481,6 +483,7 @@ header {
 			opacity: 1;
 			bottom: 0;
 			left: 0;
+			transition: all 0.3s linear;
 		}
 	}
 
@@ -1134,11 +1137,16 @@ header {
 	}
 }
 
-#s5 {
+#s5,
+#s7 {
 	margin-left: -800px;
 	width: calc(100% + 800px) !important;
 	position: relative;
 	background-color: #e73d11;
+
+	.next_page_btn {
+		background-image: url("../img/arrow screen-5.svg");
+	}
 
 	.content {
 		width: calc(100% + 400px);
@@ -1153,11 +1161,29 @@ header {
 			width: 709px;
 			top: 272px;
 			z-index: 12;
+
+			h1 {
+				font-size: 104px;
+
+				span {
+					color: #f7ad01;
+				}
+			}
+
+			.connect_link {
+				height: 32px;
+				margin-top: 24px;
+
+				span {
+					font-size: 32px;
+				}
+			}
 		}
 	}
 
 	.c1,
 	.c10,
+	.c11,
 	.c2,
 	.c3,
 	.c4,
@@ -1170,10 +1196,10 @@ header {
 	}
 
 	.c1 {
-		width: 284px;
-		height: 284px;
-		bottom: 0;
-		left: -100px;
+		width: 484px;
+		height: 484px;
+		bottom: -180px;
+		left: -200px;
 		top: inherit;
 	}
 
@@ -1227,7 +1253,7 @@ header {
 	}
 
 	.c9 {
-		width: 400px;
+		width: 340px;
 		height: 400px;
 		top: 58px;
 		left: 1591px;
@@ -1247,12 +1273,75 @@ header {
 	width: calc(100% + 800px) !important;
 	position: relative;
 
+	.illustration {
+		background-image: url("../img/illustration-2.svg");
+		width: 1036px;
+		height: 707px;
+		left: 563px;
+		top: 193px;
+	}
+
 	.content {
 		width: calc(100% + 400px);
 		height: 100%;
 		margin-left: 400px;
 		position: relative;
 		margin-right: 400px;
+
+		.about {
+			z-index: 123;
+			position: absolute;
+			left: 160px;
+			top: 194px;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			max-width: 975px;
+
+			h1 {
+				color: #ebb10b;
+				font-size: 104px;
+
+				&::after {
+					background: #ebb10b;
+				}
+			}
+
+			h4 {
+				line-height: 1.2;
+				text-align: left;
+				margin: 24px 0 0;
+			}
+
+			ul {
+				line-height: 1.33;
+				list-style: none;
+				margin: 0;
+
+				.text {
+					color: #fff;
+					text-align: left;
+					margin: 30px 85px;
+					position: relative;
+
+					&::before {
+						content: '';
+						width: 5px;
+						height: 5px;
+						position: absolute;
+						left: -24px;
+						background: #ebb10b;
+						top: 13px;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	.next_page_btn {
+		background-image: url("../img/arrow screen-6.svg");
 	}
 
 	.c1,
@@ -1277,18 +1366,219 @@ header {
 
 	.c2 {
 		background-image: url("../img/slide6/Screen-6 Triangle-2.svg");
-		height: 864px;
+		height: 849px;
 		top: inherit;
-		left: -450px;
-		width: 864px;
+		left: -500px;
+		width: 743px;
 		bottom: -500px;
 	}
 
 	.c3 {
+		background-image: url("../img/slide6/Screen-6 Triangle-3.svg");
 		width: 150px;
 		height: 150px;
-		top: inherit;
-		bottom: 100px;
-		left: 0;
+		top: 745px;
+		left: 120px;
+	}
+
+	.c4 {
+		background-image: url("../img/slide6/Screen-6 Triangle-4.svg");
+		width: 743px;
+		height: 743px;
+		top: 440px;
+		left: 1066px;
+	}
+
+	.c5 {
+		background-image: url("../img/slide6/Screen-6 Triangle-5.svg");
+		width: 101px;
+		height: 101px;
+		top: 140px;
+		left: 1466px;
+	}
+
+	.c6 {
+		background-image: url("../img/slide6/Screen-6 Triangle-6.svg");
+		width: 423px;
+		height: 423px;
+		top: -112px;
+		left: 1266px;
+		z-index: 1;
+	}
+
+	.c7 {
+		background-image: url("../img/slide6/Screen-6 Triangle-7.svg");
+		width: 188px;
+		height: 188px;
+		left: 1766px;
+		top: 445px;
+	}
+
+	.c8 {
+		background-image: url("../img/slide6/Screen-6 Rectangle-1.svg");
+		width: 161px;
+		height: 161px;
+		left: 1666px;
+		top: 745px;
+	}
+}
+
+#s7 {
+	background-color: #7c00d9;
+	margin-left: -800px;
+	width: calc(100% + 800px) !important;
+	position: relative;
+	overflow: hidden;
+
+	.c11 {
+		background-image: url("../img/slide1/oval.svg");
+		width: 319px;
+		height: 319px;
+		left: -560px;
+		top: 341px;
+		z-index: 1;
+	}
+
+	#back_page_btn {
+		background-image: url("../img/arrow screen-7.svg");
+		left: 32px;
+		width: 43px;
+		height: 32px;
+		position: absolute;
+		bottom: 32px;
+		right: 32px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		z-index: 1231234;
+	}
+
+	.text {
+		color: #fff;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+
+	.license {
+		position: absolute;
+		left: 160px;
+		bottom: 12px;
+		display: flex;
+		flex-flow: row nowrap;
+
+		a {
+			white-space: nowrap;
+			z-index: 12;
+			color: #fff;
+			margin: 0 10px;
+			transition: all 0.3s linear;
+			font-size: 18px;
+
+			&::after {
+				background-color: #f7ad01;
+				height: 1px;
+			}
+
+			&:hover {
+				color: #f7ad01;
+			}
+		}
+	}
+
+	.copy {
+		position: absolute;
+		color: #fff;
+		font-size: 18px;
+		right: 160px;
+		bottom: 12px;
+	}
+}
+
+#s8 {
+	margin-left: -800px;
+	width: calc(100% + 1200px) !important;
+
+	.content {
+		z-index: 3;
+		width: calc(100% + 400px);
+		height: 100%;
+		margin-left: 400px;
+		margin-right: 800px;
+		position: relative;
+
+		h1 {
+			font-size: 104px;
+
+			span {
+				color: #f7ad01;
+			}
+		}
+
+		.about {
+			max-width: 945px;
+			margin-left: 160px;
+			text-align: left;
+			margin-top: 256px;
+		}
+
+		.c1,
+		.c2,
+		.c3,
+		.c4,
+		.c5,
+		.c6,
+		.c7 {
+			background-image: url("../img/slide1/oval.svg");
+		}
+
+		.c1 {
+			width: 64px;
+			height: 64px;
+			left: 230px;
+			top: 85px;
+		}
+
+		.c2 {
+			width: 262px;
+			height: 304px;
+			left: -30px;
+			top: 148px;
+			z-index: -1;
+		}
+
+		.c3 {
+			width: 277px;
+			height: 277px;
+			left: 1174px;
+			top: -10px;
+		}
+
+		.c4 {
+			width: 86px;
+			top: 275px;
+			left: 1391px;
+			height: 86px;
+		}
+
+		.c5 {
+			width: 43px;
+			height: 43px;
+			left: 1325px;
+			top: 327px;
+		}
+
+		.c6 {
+			width: 64px;
+			height: 64px;
+			left: 1238px;
+			top: 410px;
+		}
+
+		.c7 {
+			width: 583px;
+			height: 526px;
+			top: 474px;
+			left: 1117px;
+		}
 	}
 }
