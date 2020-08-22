@@ -498,8 +498,9 @@ header {
 }
 
 #s1 {
-	width: calc(100% + 400px) !important;
-
+	width: calc(100% + 1200px) !important;
+	margin-right: 800px;
+	margin-left: -800px;
 	.wrapper {
 		position: absolute;
 		left: 58px;
@@ -525,8 +526,13 @@ header {
 	}
 
 	.star {
-		height: 633px;
-		width: 310px;
+		height: 812px;
+	width: 978px;
+	background-size: contain;
+	background-position: right;
+	top: -200px;
+	left: -662px;
+	background-image: url('../img/star_s.svg');
 	}
 
 	.c1,

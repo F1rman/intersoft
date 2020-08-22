@@ -7,7 +7,7 @@ $(document).ready(()=>{
      watchState:true,
    },
    direction: 'horizontal',
-    freeMode:true,
+    // freeMode:true,
  });
 
 
@@ -25,7 +25,28 @@ $(document).ready(()=>{
     // freeMode:true
  });
 
+ active_menu()
 
+swiper.on('slideChange', function() {
+  active_menu()
+console.log(swiper.activeIndex);
+
+});
+function active_menu() {
+  $('#menu  a').removeClass("active");
+  if (swiper.activeIndex<=2) {
+    $('#menu  a').removeClass("active");
+      $('#menu  .who').addClass("active");
+  }
+  if (swiper.activeIndex<6 && swiper.activeIndex>2) {
+    $('#menu  a').removeClass("active");
+      $('#menu  .services').addClass("active");
+  }
+  if (swiper.activeIndex<8 && swiper.activeIndex>5) {
+    $('#menu  a').removeClass("active");
+      $('#menu  .contacts').addClass("active");
+  }
+}
  $('.next_page_btn').click(()=>{
    swiper.slideNext();
  })
