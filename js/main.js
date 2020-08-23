@@ -21,7 +21,8 @@ $(document).ready(() => {
           watchState: true,
         },
         direction: 'vertical',
-        // freeMode:true,
+        freeMode:true,
+        mousewheel:true
     }
   }
 
