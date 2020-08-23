@@ -1,17 +1,45 @@
 $(document).ready(() => {
-  var swiper = new Swiper('#main_slider', {
-    mousewheel: true,
-    spaceBetween: 800,
-    hashNavigation: {
-      replaceState: true,
-      watchState: true,
-    },
-    direction: 'horizontal',
-    // freeMode:true,
-  });
+
+  let options = {
+      mousewheel: true,
+      spaceBetween: 800,
+      hashNavigation: {
+        replaceState: true,
+        watchState: true,
+      },
+      direction: 'horizontal',
+      // freeMode:true,
+  }
+  direction = 'horizontal';
+  if ($(window).width()<480) {
+    console.log('mobile');
+    options = {
+        // mousewheel: true,
+        spaceBetween: 0,
+        hashNavigation: {
+          replaceState: true,
+          watchState: true,
+        },
+        direction: 'vertical',
+        // freeMode:true,
+    }
+  }
+
+let swiper = initSwiper(direction);
+function initSwiper(direction) {
+  return new Swiper('#main_slider', options);
+}
+function changeDirection() {
+  isVertical = !isVertical;
+  direction = isVertical ? 'vertical' : 'horizontal';
+  let slideIndex = swiper.activeIndex;
+  swiper.destroy(true, true);
+  swiper = initSwiper(direction);
+  swiper.slideTo(slideIndex,0);
+}
 
 
-  var swiper_s4 = new Swiper('#s4 .swiper-container', {
+  let swiper_s4 = new Swiper('#s4 .swiper-container', {
     mousewheel: true,
     nested: true,
     autoHeight: true,
@@ -71,6 +99,17 @@ $(document).ready(() => {
   })
   $('.close').click(function() {
     $('.modal1').removeClass('active')
+  });
+  $('#menu_cont a').click(function() {
+    $('#menu_cont').removeClass('active')
+  });
+
+
+  $('#menu_mobile_btn').click(function() {
+    $('#menu_cont').toggleClass('active')
+  });
+  $('.close_m').click(function() {
+    $('#menu_cont').removeClass('active')
   });
   $('#s4 .flex .develop').click(function() {
     $('.modal1.modal0').toggleClass('active')
