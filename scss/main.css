@@ -1234,6 +1234,9 @@ header {
   h2 {
     font-size: 48px; }
 
+  h3 {
+    font-size: 48px; }
+
   .connect_link {
     height: 32px;
     margin-top: 16px;
@@ -1340,4 +1343,64 @@ header {
     bottom: -150px; }
   #s2 .content .c9 {
     left: 1000px;
-    width: 152px; } }
+    width: 152px; }
+
+  #s3 .c5 {
+    left: -277px; }
+  #s3 .c1 {
+    width: 400px;
+    height: 400px;
+    left: 800px;
+    top: 488px; }
+  #s3 .c6 {
+    left: 200px; }
+  #s3 .c9 {
+    left: 580px;
+    top: 500px;
+    z-index: -1; }
+  #s3 .c4 {
+    left: 384px;
+    height: 927px;
+    width: 510px;
+    background-size: cover;
+    z-index: 4;
+    top: 30px; }
+  #s3 .c7 {
+    left: 405px;
+    top: 645px; }
+  #s3 .c8 {
+    top: 613px;
+    left: 286px; }
+  #s3 .about {
+    z-index: 500;
+    max-width: 715px;
+    left: 28px;
+    top: 228px; }
+    #s3 .about h2 {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 400px;
+      font-size: 64px; }
+      #s3 .about h2 span::after {
+        height: 2px; }
+    #s3 .about .about_p {
+      margin: 24px 0 0;
+      padding: 0;
+      display: flex;
+      flex-flow: column; }
+      #s3 .about .about_p p {
+        font-size: 20px;
+        max-width: 368px;
+        margin-bottom: 16px; }
+
+  #s4 .content .c4 {
+    left: 160px; }
+  #s4 .content .c5 {
+    top: 771px; }
+  #s4 .content .swiper_s4 .swiper-slide .h3_slide {
+    max-width: 469px; }
+  #s4 .content .swiper_s4 .swiper-slide .flex .btn_down {
+    width: 40px;
+    height: 40px; } }
