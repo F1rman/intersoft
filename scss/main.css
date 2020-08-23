@@ -241,8 +241,8 @@ body {
   background-image: url("../img/slide4/illustration-9.svg"); }
 
 .next_page_btn {
-  width: 32px;
-  height: 32px;
+  width: 43px;
+  height: 43px;
   position: absolute;
   bottom: 32px;
   right: 32px;
@@ -717,7 +717,7 @@ header {
     width: calc(100% - 400px);
     height: 100%;
     position: relative;
-    margin-right: 800px;
+    margin-right: 1200px;
     margin-left: 800px;
     display: flex;
     justify-content: center;
@@ -1395,12 +1395,139 @@ header {
         max-width: 368px;
         margin-bottom: 16px; }
 
-  #s4 .content .c4 {
-    left: 160px; }
-  #s4 .content .c5 {
-    top: 771px; }
-  #s4 .content .swiper_s4 .swiper-slide .h3_slide {
-    max-width: 469px; }
-  #s4 .content .swiper_s4 .swiper-slide .flex .btn_down {
-    width: 40px;
-    height: 40px; } }
+  #s4 {
+    overflow: hidden; }
+    #s4 .content {
+      margin-right: 800px; }
+      #s4 .content .next_page_btn {
+        left: 904px; }
+      #s4 .content .c4 {
+        left: 160px; }
+      #s4 .content .c5 {
+        top: 771px; }
+      #s4 .content .c1 {
+        left: 0; }
+      #s4 .content .c2 {
+        left: 675px;
+        top: 287px;
+        width: 48px;
+        height: 48px; }
+      #s4 .content .c3 {
+        left: 700px;
+        top: -200px;
+        width: 620px; }
+      #s4 .content .swiper_s4 .swiper-container {
+        overflow: visible; }
+      #s4 .content .swiper_s4 .swiper-slide .h3_slide {
+        max-width: 469px; }
+      #s4 .content .swiper_s4 .swiper-slide .flex .btn_down {
+        width: 40px;
+        height: 40px; }
+
+  #s5 .content .c2,
+  #s7 .content .c2 {
+    top: 76px;
+    left: -100px; }
+  #s5 .content .c3,
+  #s7 .content .c3 {
+    top: 286px;
+    left: 85px; }
+  #s5 .content .c4,
+  #s7 .content .c4 {
+    width: 541px;
+    height: 541px;
+    top: 242px;
+    left: 114px; }
+  #s5 .content .c6,
+  #s7 .content .c6 {
+    left: 723px;
+    top: 299px; }
+  #s5 .content .c7,
+  #s7 .content .c7 {
+    left: 572px;
+    top: -20px; }
+  #s5 .content .c5,
+  #s7 .content .c5 {
+    left: 618px;
+    top: 872px; }
+  #s5 .content .c9,
+  #s7 .content .c9 {
+    left: 950px;
+    top: 520px;
+    width: 400px; }
+  #s5 .content .c8,
+  #s7 .content .c8 {
+    left: 800px; }
+  #s5 .content .about,
+  #s7 .content .about {
+    width: 469px;
+    left: 150px;
+    top: 384px; }
+    #s5 .content .about .connect_link,
+    #s7 .content .about .connect_link {
+      width: 100%; }
+      #s5 .content .about .connect_link span,
+      #s7 .content .about .connect_link span {
+        font-size: 24px;
+        height: 24px; }
+    #s5 .content .about h1,
+    #s7 .content .about h1 {
+      font-size: 64px; }
+
+  #s6 .content .c1 {
+    width: 370px;
+    height: 370px;
+    top: -100px; }
+  #s6 .content .illustration {
+    left: -111px;
+    top: 352px; }
+  #s6 .content .c3 {
+    width: 93px;
+    height: 150px;
+    top: 716px;
+    left: 49px; }
+  #s6 .content .c6 {
+    left: 512px; }
+  #s6 .content .c5 {
+    left: 671px; }
+  #s6 .content .c4 {
+    left: 500px;
+    width: 500px;
+    top: 709px; }
+  #s6 .content .c8 {
+    left: 1100px;
+    top: 863px; }
+  #s6 .content .about {
+    max-width: 650px;
+    left: 28px;
+    top: 120px; }
+    #s6 .content .about h1 {
+      font-size: 64px; }
+      #s6 .content .about h1::after {
+        display: none; }
+    #s6 .content .about h4 {
+      font-size: 32px;
+      margin-top: 8px; }
+    #s6 .content .about ul {
+      margin: 0;
+      padding: 0;
+      max-width: 540px; }
+      #s6 .content .about ul .text {
+        font-size: 20px;
+        margin: 25px; }
+
+  #s7 .license {
+    flex-flow: column;
+    align-items: flex-start;
+    bottom: 64px;
+    right: 28px;
+    width: 265px;
+    margin: 0;
+    left: inherit; }
+    #s7 .license a {
+      font-size: 16px; }
+      #s7 .license a::after {
+        display: none; }
+  #s7 .copy {
+    font-size: 16px;
+    right: 145px; } }

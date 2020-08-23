@@ -7,7 +7,7 @@ $(document).ready(() => {
       watchState: true,
     },
     direction: 'horizontal',
-    // freeMode:true,
+    freeMode:true,
   });
 
 
