@@ -1519,6 +1519,8 @@ header {
         font-size: 20px;
         margin: 25px; }
 
+  #s7 .content .c9 {
+    width: 200px; }
   #s7 .license {
     flex-flow: column;
     align-items: flex-start;
@@ -1558,4 +1560,12 @@ header {
   .modal1.active .flex_content .btn_contact {
     width: 281px; }
     .modal1.active .flex_content .btn_contact .span {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  #s8 .content .about {
+    margin-left: 24px; }
+    #s8 .content .about h1 {
+      font-size: 64px; }
+    #s8 .content .about h4 {
+      font-size: 32px;
+      margin-top: 24px; } }

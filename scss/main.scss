@@ -2063,6 +2063,11 @@ header {
 	}
 
 	#s7 {
+		.content{
+			.c9{
+				width: 200px;
+			}
+		}
 		.license {
 			flex-flow: column;
 			align-items: flex-start;
@@ -2131,5 +2136,21 @@ header {
 				}
 			}
 
+	}
+	#s8{
+		.content{
+
+		.about{
+			    margin-left: 24px;
+					h1{
+						    font-size: 64px;
+					}
+					h4{
+						font-size: 32px;
+margin-top: 24px;
+					}
+		}
+	}
+		
 	}
 }
