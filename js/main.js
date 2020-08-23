@@ -10,6 +10,31 @@ $(document).ready(() => {
       direction: 'horizontal',
       // freeMode:true,
   }
+  let options_s4 = {
+    nested: true,
+    autoHeight: true,
+    slidesPerView: 3,
+    centeredSlides: true,
+    parallax: true,
+    direction: 'horizontal',
+    roundLengths: true,
+    grabCursor: true,
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
+      },
+       640: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+
+        }
+
+    },
+
+    // freeMode:true
+  }
   direction = 'horizontal';
   if ($(window).width()<480) {
     console.log('mobile');
@@ -22,47 +47,47 @@ $(document).ready(() => {
         },
         direction: 'vertical',
         freeMode:true,
-        mousewheel:true
+    }
+    options_s4 = {
+      nested: true,
+      autoHeight: true,
+      slidesPerView: 3,
+      centeredSlides: true,
+      parallax: true,
+      direction: 'vertical',
+      roundLengths: true,
+      grabCursor: true,
+      breakpoints: {
+        769: {
+          slidesPerView: 3,
+        },
+         640: {
+            slidesPerView: 2,
+          }
+
     }
   }
-
+}
 let swiper = initSwiper(direction);
 function initSwiper(direction) {
   return new Swiper('#main_slider', options);
 }
+let swiper_s4 = initSwiper1(direction);
+function initSwiper1(direction) {
+  return new Swiper('#s4 .swiper-container', options_s4);
+}
+
 function changeDirection() {
   isVertical = !isVertical;
   direction = isVertical ? 'vertical' : 'horizontal';
   let slideIndex = swiper.activeIndex;
   swiper.destroy(true, true);
   swiper = initSwiper(direction);
+  swiper_s4 = initSwiper1(direction);
+  swiper_s4.slideTo(slideIndex,0);
   swiper.slideTo(slideIndex,0);
 }
 
-
-  let swiper_s4 = new Swiper('#s4 .swiper-container', {
-    mousewheel: true,
-    nested: true,
-    autoHeight: true,
-    slidesPerView: 3,
-    centeredSlides: true,
-    parallax: true,
-    direction: 'horizontal',
-    mousewheel: true,
-    roundLengths: true,
-    grabCursor: true,
-    breakpoints: {
-      769: {
-        slidesPerView: 3,
-      },
-       640: {
-          slidesPerView: 2,
-        }
-
-    },
-
-    // freeMode:true
-  });
 
   active_menu()
 
