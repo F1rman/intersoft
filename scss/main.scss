@@ -146,7 +146,6 @@ body {
 }
 #main_slider > .swiper-wrapper {
 	transition: transform 0.05s ease !important;
-
 }
 .swiper-container {
 	width: 100%;
@@ -237,7 +236,7 @@ body {
 	}
 
 	.block {
-		background-image: url("../img/screen-4-rectangle-2.svg");
+		background-image: url("../img/screen-4-rectangle-23.svg");
 		z-index: 1002;
 		position: fixed;
 		left: 32%;
@@ -1622,6 +1621,9 @@ header {
 }
 // tablet 768px x 1024px
 @media only screen and (max-width: 768px) {
+	#main_slider > .swiper-wrapper {
+		transition: none !important;
+	}
 	header {
 		margin-top: 16px;
 		padding: 0 24px;
@@ -1889,7 +1891,6 @@ header {
 		overflow: hidden;
 
 		.content {
-			margin-right: 800px;
 
 			.next_page_btn {
 				left: 904px;
@@ -2046,6 +2047,9 @@ header {
 			.c8 {
 				left: 1100px;
 				top: 863px;
+			}
+			.c7{
+				display: none;
 			}
 
 			.about {

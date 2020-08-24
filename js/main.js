@@ -30,27 +30,41 @@ freeModeSticky: true,
     parallax: true,
     direction: 'horizontal',
     grabCursor: true,
-    breakpoints: {
-      769: {
-        slidesPerView: 3,
-      },
-       640: {
-          slidesPerView: 2,
-        },
-        480: {
-          slidesPerView: 1,
 
-        }
-
-    },
 
     // freeMode:true
+  }
+
+  if ($(window).width()<=768 && $(window).width()>480) {
+    console.log('tablet');
+     options = {
+        spaceBetween: 800,
+        hashNavigation: {
+          replaceState: true,
+          watchState: true,
+        },
+        nested:true,
+        direction: 'horizontal',
+        freeMode:true,
+  freeModeSticky: true,
+
+    }
+     options_s4 = {
+      autoHeight: true,
+      spaceBetween: 100,
+      slidesPerView: 1,
+      centeredSlides: true,
+      parallax: true,
+      direction: 'horizontal',
+
+
+      // freeMode:true
+    }
   }
   direction = 'horizontal';
   if ($(window).width()<480) {
     console.log('mobile');
     options = {
-        mousewheel: true,
         spaceBetween: 0,
         hashNavigation: {
           replaceState: true,
@@ -64,22 +78,13 @@ freeModeSticky: true,
       autoHeight: true,
       slidesPerView: 3,
       centeredSlides: true,
-      parallax: true,
-      direction: 'vertical',
+      direction: 'horizontal',
       roundLengths: true,
       grabCursor: true,
-      breakpoints: {
-        769: {
-          slidesPerView: 3,
-        },
-         640: {
-            slidesPerView: 2,
-          }
 
-    }
   }
 }
-
+console.log(options, options_s4);
 let swiper = initSwiper(direction);
 function initSwiper(direction) {
   return new Swiper('#main_slider', options);

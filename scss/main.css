@@ -199,7 +199,7 @@ body {
     .modal1.active .close:hover {
       background-image: url("../img/cross hover.svg") !important; }
   .modal1.active .block {
-    background-image: url("../img/screen-4-rectangle-2.svg");
+    background-image: url("../img/screen-4-rectangle-23.svg");
     z-index: 1002;
     position: fixed;
     left: 32%;
@@ -1239,6 +1239,9 @@ header {
       left: 1117px; }
 
 @media only screen and (max-width: 768px) {
+  #main_slider > .swiper-wrapper {
+    transition: none !important; }
+
   header {
     margin-top: 16px;
     padding: 0 24px;
@@ -1413,32 +1416,30 @@ header {
 
   #s4 {
     overflow: hidden; }
-    #s4 .content {
-      margin-right: 800px; }
-      #s4 .content .next_page_btn {
-        left: 904px; }
-      #s4 .content .c4 {
-        left: 160px; }
-      #s4 .content .c5 {
-        top: 771px; }
-      #s4 .content .c1 {
-        left: 0; }
-      #s4 .content .c2 {
-        left: 675px;
-        top: 287px;
-        width: 48px;
-        height: 48px; }
-      #s4 .content .c3 {
-        left: 700px;
-        top: -200px;
-        width: 620px; }
-      #s4 .content .swiper_s4 .swiper-container {
-        overflow: visible; }
-      #s4 .content .swiper_s4 .swiper-slide .h3_slide {
-        max-width: 469px; }
-      #s4 .content .swiper_s4 .swiper-slide .flex .btn_down {
-        width: 40px;
-        height: 40px; }
+    #s4 .content .next_page_btn {
+      left: 904px; }
+    #s4 .content .c4 {
+      left: 160px; }
+    #s4 .content .c5 {
+      top: 771px; }
+    #s4 .content .c1 {
+      left: 0; }
+    #s4 .content .c2 {
+      left: 675px;
+      top: 287px;
+      width: 48px;
+      height: 48px; }
+    #s4 .content .c3 {
+      left: 700px;
+      top: -200px;
+      width: 620px; }
+    #s4 .content .swiper_s4 .swiper-container {
+      overflow: visible; }
+    #s4 .content .swiper_s4 .swiper-slide .h3_slide {
+      max-width: 469px; }
+    #s4 .content .swiper_s4 .swiper-slide .flex .btn_down {
+      width: 40px;
+      height: 40px; }
 
   #s5 .content .c2,
   #s7 .content .c2 {
@@ -1513,6 +1514,8 @@ header {
   #s6 .content .c8 {
     left: 1100px;
     top: 863px; }
+  #s6 .content .c7 {
+    display: none; }
   #s6 .content .about {
     max-width: 650px;
     left: 28px;
