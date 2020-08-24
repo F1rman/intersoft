@@ -1828,9 +1828,10 @@ header {
           font-size: 18px;
           padding: 0; }
       #s3 .content .c5 {
-        height: 417px;
-        top: -61px;
-        z-index: 1; }
+        height: 317px;
+        top: 0;
+        z-index: 1;
+        left: -177px; }
       #s3 .content .c6 {
         display: none; }
       #s3 .content .c12 {
