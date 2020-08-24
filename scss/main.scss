@@ -2785,4 +2785,24 @@ width: 222px;
 		.content{
 		}
 	}
+	.modal1.active{
+		.block{
+			left: 0;
+		}
+		.flex_content{
+			    padding: 20px;
+		}
+		h4{
+			font-size: 24px;
+max-width: 300px;
+		}
+		.text{
+			    font-size: 18px;
+		}
+		.btn_contact{
+			span{
+				font-size: 20px;
+			}
+		}
+	}
 }

@@ -2030,4 +2030,16 @@ header {
   #s9 {
     display: block;
     height: 2000px !important;
-    padding-bottom: 800px; } }
+    padding-bottom: 800px; }
+
+  .modal1.active .block {
+    left: 0; }
+  .modal1.active .flex_content {
+    padding: 20px; }
+  .modal1.active h4 {
+    font-size: 24px;
+    max-width: 300px; }
+  .modal1.active .text {
+    font-size: 18px; }
+  .modal1.active .btn_contact span {
+    font-size: 20px; } }

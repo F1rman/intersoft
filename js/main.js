@@ -1,5 +1,4 @@
 $(document).ready(() => {
-
   let options = {
       mousewheel: true,
       spaceBetween: 800,
@@ -68,6 +67,19 @@ $(document).ready(() => {
     }
   }
 }
+$( window ).resize(function() {
+console.log($(window).width());
+if ($(window).width()>768) {
+  console.log('desk');
+}
+if ($(window).width()>480 && $(window).width()<768) {
+  console.log('tabl');
+}
+if ($(window).width()<480){
+  console.log('mobile');
+  
+}
+});
 let swiper = initSwiper(direction);
 function initSwiper(direction) {
   return new Swiper('#main_slider', options);
