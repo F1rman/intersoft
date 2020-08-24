@@ -120,6 +120,9 @@ body {
   transition-property: transform;
   box-sizing: content-box; }
 
+#main_slider > .swiper-wrapper {
+  transition: transform 0.05s ease !important; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -191,7 +194,10 @@ body {
     right: 0;
     left: calc(100% - 80px);
     z-index: 1001;
-    top: 0; }
+    top: 0;
+    transition: background-image 0.3s linear; }
+    .modal1.active .close:hover {
+      background-image: url("../img/cross hover.svg") !important; }
   .modal1.active .block {
     background-image: url("../img/screen-4-rectangle-2.svg");
     z-index: 1002;
@@ -293,6 +299,9 @@ body {
   background-size: contain;
   position: absolute;
   z-index: 2; }
+
+.close {
+  background-image: url("../img/cross.svg") !important; }
 
 header {
   position: fixed;
@@ -543,18 +552,18 @@ header {
       width: 210px;
       height: 242px;
       top: 55px;
-      left: 1390px;
+      left: 87%;
       z-index: 4; }
     #s2 .content .c7 {
       background-image: url("../img/slide2/Screen-2 Triangle -6.svg");
       width: 81px;
       height: 101px;
       top: 204px;
-      left: 1509px;
+      left: 95%;
       z-index: 4; }
     #s2 .content .c8 {
       background-image: url("../img/slide2/Screen-2 Triangle -7.svg");
-      left: 1400px;
+      left: 98%;
       width: 509.5px;
       bottom: -71px;
       top: inherit;
@@ -570,7 +579,7 @@ header {
     width: 1172px;
     position: absolute;
     z-index: 3;
-    left: 268px;
+    left: calc(50% - 586px);
     top: 209px; }
     #s2 .about h2 {
       font-size: 72px;
@@ -638,7 +647,7 @@ header {
     left: -150px; }
   #s3 .c4 {
     background-image: url("../img/slide3/illustration-1.svg");
-    left: 1143px;
+    left: 71%;
     top: 73px;
     width: 429px;
     height: 779px; }
@@ -670,7 +679,7 @@ header {
     width: 27px;
     height: 27px; }
   #s3 .c10 {
-    left: 1368px;
+    left: 85%;
     top: 422px;
     width: 400px;
     height: 400px;
@@ -688,10 +697,10 @@ header {
     bottom: 0; }
   #s3 .about {
     width: 1172px;
+    left: calc(50% - 586px);
     max-width: 985px;
     position: absolute;
     z-index: 3;
-    left: 160px;
     top: 146px; }
     #s3 .about h2 {
       text-align: left; }
@@ -720,15 +729,16 @@ header {
   width: calc(100% + 800px) !important;
   position: relative; }
   #s4 .content {
-    width: calc(100% - 400px);
-    height: 100%;
-    position: relative;
-    margin-right: 1200px;
     margin-left: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 34; }
+    z-index: 34;
+    width: calc(100% - 800px);
+    height: 100%;
+    margin-left: 400px;
+    position: relative;
+    margin-right: 400px; }
     #s4 .content .swiper_s4 {
       width: 100%;
       height: 100%;
@@ -736,13 +746,13 @@ header {
       position: relative;
       z-index: 23; }
       #s4 .content .swiper_s4 .swiper-slide {
-        background: transparent;
-        max-width: 680px; }
+        background: transparent; }
         #s4 .content .swiper_s4 .swiper-slide .flex {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-flow: column;
+          max-width: 680px;
           position: relative; }
           #s4 .content .swiper_s4 .swiper-slide .flex .illustration {
             background-image: url("../img/slide4/illustration-3.svg");
@@ -891,10 +901,10 @@ header {
     #s5 .content .about,
     #s7 .content .about {
       position: absolute;
-      left: 446px;
       width: 709px;
       top: 272px;
-      z-index: 12; }
+      z-index: 12;
+      left: calc(50% - 358px); }
       #s5 .content .about h1,
       #s7 .content .about h1 {
         font-size: 104px; }
@@ -954,50 +964,51 @@ header {
   #s7 .c4 {
     width: 804px;
     height: 804px;
-    left: 398px;
-    top: 48px; }
+    top: 48px;
+    left: calc(50% - 402px); }
   #s5 .c5,
   #s7 .c5 {
     width: 64px;
     height: 64px;
     top: 745px;
-    left: 1102px; }
+    left: 68.9%; }
   #s5 .c6,
   #s7 .c6 {
     width: 43px;
     height: 43px;
-    left: 1325px;
+    left: 82.8%;
     top: 328px; }
   #s5 .c7,
   #s7 .c7 {
     width: 277px;
     height: 277px;
     top: 11px;
-    left: 1174px; }
+    left: 73.5%; }
   #s5 .c8,
   #s7 .c8 {
     width: 86px;
     height: 86px;
     top: 275px;
-    left: 1391px; }
+    left: 86.9%; }
   #s5 .c9,
   #s7 .c9 {
     width: 340px;
     height: 400px;
     top: 58px;
-    left: 1591px; }
+    left: 110%; }
   #s5 .c10,
   #s7 .c10 {
     width: 105px;
     height: 105px;
     top: 774px;
-    left: 1791px; }
+    left: 111%; }
 
 #s6 {
   background-color: #131313;
   margin-left: -800px;
   width: calc(100% + 800px) !important;
-  position: relative; }
+  position: relative;
+  z-index: 12321; }
   #s6 .illustration {
     background-image: url("../img/illustration-2.svg");
     width: 1036px;
@@ -1114,8 +1125,7 @@ header {
   background-color: #7c00d9;
   margin-left: -800px;
   width: calc(100% + 800px) !important;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   #s7 .c11 {
     background-image: url("../img/slide1/oval.svg");
     width: 319px;
@@ -1848,7 +1858,7 @@ header {
       width: 100%;
       margin: 0; }
       #s4 .content .swiper-wrapper .swiper-slide {
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         opacity: 0; }
         #s4 .content .swiper-wrapper .swiper-slide .flex {
           max-width: 320px; }
@@ -1860,7 +1870,7 @@ header {
             height: 32px; }
       #s4 .content .swiper-wrapper .swiper-slide.swiper-slide-active {
         opacity: 1;
-        transition: all .3s ease; }
+        transition: all 0.3s ease; }
         #s4 .content .swiper-wrapper .swiper-slide.swiper-slide-active .h3_slide .after::after {
           height: 1px; }
         #s4 .content .swiper-wrapper .swiper-slide.swiper-slide-active .flex .illustration {
@@ -1871,7 +1881,7 @@ header {
       #s4 .content .c1 {
         height: 142px;
         left: -80px;
-        top: 0px; }
+        top: 0; }
       #s4 .content .c2 {
         left: 302px;
         width: 25px;
@@ -1884,52 +1894,64 @@ header {
         height: 111px;
         top: 222px; }
       #s4 .content .c4 {
-        left: 0px;
+        left: 0;
         bottom: 13px;
         width: 66px;
         height: 111px;
         background-image: url("../img/screen-4-rectangle-2.svg"); }
 
-  #s5, #s7 {
+  #s5,
+  #s7 {
     height: 720px !important;
     width: 100% !important;
     margin: 0 !important; }
-    #s5 .content, #s7 .content {
+    #s5 .content,
+    #s7 .content {
       width: 100%;
       margin: 0; }
-      #s5 .content .c1, #s7 .content .c1 {
+      #s5 .content .c1,
+      #s7 .content .c1 {
         width: 308px;
         top: 528px;
         left: -154px; }
-      #s5 .content .c2, #s7 .content .c2 {
+      #s5 .content .c2,
+      #s7 .content .c2 {
         left: 179px;
         top: -121px;
         width: 273px;
         height: 273px; }
-      #s5 .content .c4, #s7 .content .c4 {
+      #s5 .content .c4,
+      #s7 .content .c4 {
         width: 340px;
         height: 340px;
         left: calc(50% - 170px);
         top: 188px; }
-      #s5 .content .c3, #s7 .content .c3 {
+      #s5 .content .c3,
+      #s7 .content .c3 {
         width: 44px;
         height: 44px;
         top: 73px;
         left: 136px; }
-      #s5 .content .c5, #s7 .content .c5 {
+      #s5 .content .c5,
+      #s7 .content .c5 {
         left: 163px;
         top: 563px; }
-      #s5 .content .about, #s7 .content .about {
+      #s5 .content .about,
+      #s7 .content .about {
         width: 320px;
         left: calc(50% - 160px);
         top: 300px; }
-        #s5 .content .about .connect_link, #s7 .content .about .connect_link {
+        #s5 .content .about .connect_link,
+        #s7 .content .about .connect_link {
           margin-top: 1px; }
-          #s5 .content .about .connect_link span, #s7 .content .about .connect_link span {
+          #s5 .content .about .connect_link span,
+          #s7 .content .about .connect_link span {
             height: 20px; }
-            #s5 .content .about .connect_link span::after, #s7 .content .about .connect_link span::after {
+            #s5 .content .about .connect_link span::after,
+            #s7 .content .about .connect_link span::after {
               height: 1px; }
-          #s5 .content .about .connect_link .next, #s7 .content .about .connect_link .next {
+          #s5 .content .about .connect_link .next,
+          #s7 .content .about .connect_link .next {
             margin-left: 5px;
             width: 12px;
             height: 12px; }
