@@ -120,9 +120,9 @@ body {
   transition-property: transform;
   box-sizing: content-box; }
 
-#main_slider > .swiper-wrapper {
-  transition: transform 0.05s ease !important; }
-
+@media screen and (min-width: 769px) {
+  #main_slider > .swiper-wrapper {
+    transition: transform 0.05s ease !important; } }
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -741,7 +741,6 @@ header {
     margin-right: 400px; }
     #s4 .content .swiper_s4 {
       width: 100%;
-      height: 100%;
       background: rgba(255, 0, 0, 0);
       position: relative;
       z-index: 23; }
@@ -1239,9 +1238,6 @@ header {
       left: 1117px; }
 
 @media only screen and (max-width: 768px) {
-  #main_slider > .swiper-wrapper {
-    transition: none !important; }
-
   header {
     margin-top: 16px;
     padding: 0 24px;
@@ -1598,6 +1594,9 @@ header {
   left: 0; }
 
 @media only screen and (max-width: 480px) {
+  .swiper_s4 .swiper-wrapper {
+    flex-flow: row; }
+
   h2 {
     font-size: 32px; }
 
@@ -1753,8 +1752,7 @@ header {
 
   #s2 {
     margin-left: 0;
-    width: 100%;
-    height: 1092px !important; }
+    width: 100%; }
     #s2 .content {
       z-index: 3;
       position: relative;
@@ -1763,7 +1761,7 @@ header {
         z-index: 231;
         max-width: 320px;
         left: 20px;
-        top: 352px; }
+        top: 252px; }
         #s2 .content .about h2 {
           font-size: 32px; }
         #s2 .content .about .about_p {
@@ -1792,30 +1790,29 @@ header {
         left: 188px;
         width: 164px;
         height: 584px;
-        top: 288px; }
+        top: 188px; }
       #s2 .content .c6 {
         left: 160px;
         width: 250px;
-        top: 256px;
+        top: 156px;
         height: 201px; }
       #s2 .content .c7 {
         left: 287px;
-        top: 360px; }
+        top: 260px; }
       #s2 .content .c8 {
         left: -23px;
         width: 229px;
         height: 229px;
-        top: 859px; }
+        top: 659px; }
       #s2 .content .c9 {
         left: 126px;
         width: 68px;
         height: 68px;
-        top: 942px; }
+        top: 742px; }
 
   #s3 {
     margin-left: 0;
-    width: 100%;
-    height: 982px !important; }
+    width: 100%; }
     #s3 .content {
       margin: 0;
       width: 100%; }
@@ -1854,7 +1851,6 @@ header {
         top: 458px; }
 
   #s4 {
-    height: 812px;
     width: 100% !important;
     margin: 0; }
     #s4 .content {
@@ -1905,7 +1901,6 @@ header {
 
   #s5,
   #s7 {
-    height: 720px !important;
     width: 100% !important;
     margin: 0 !important; }
     #s5 .content,
@@ -1960,7 +1955,6 @@ header {
             height: 12px; }
 
   #s6 {
-    height: 1069px !important;
     width: 100% !important;
     margin: 0 !important; }
     #s6 .content {
@@ -1979,9 +1973,9 @@ header {
       #s6 .content .illustration {
         width: 109%;
         z-index: 32;
-        height: 474px;
-        top: 585px;
-        left: 0;
+        height: 374px;
+        top: 505px;
+        left: -30px;
         background-size: cover;
         background-position: right; }
       #s6 .content .c2 {
@@ -2042,29 +2036,27 @@ header {
   #s8 {
     width: 100% !important;
     margin: 0 !important;
-    height: 200px !important; }
+    height: calc(100% + 800px) !important; }
     #s8 .content {
       width: 100% !important;
       margin: 0 !important; }
-      #s8 .content .about {
-        margin-top: 500px; }
       #s8 .content h4 {
         font-size: 20px;
         width: 222px; }
 
-  #s9 {
-    display: block;
-    height: 2000px !important;
-    padding-bottom: 800px; }
-
-  .modal1.active .block {
-    left: 0; }
-  .modal1.active .flex_content {
-    padding: 20px; }
-  .modal1.active h4 {
-    font-size: 24px;
-    max-width: 300px; }
-  .modal1.active .text {
-    font-size: 18px; }
-  .modal1.active .btn_contact span {
-    font-size: 20px; } }
+  .modal1.active {
+    padding: 16px; }
+    .modal1.active .block {
+      left: -200px; }
+    .modal1.active .illustration {
+      width: 90%;
+      left: 0; }
+    .modal1.active .flex_content {
+      padding: 20px; }
+    .modal1.active h4 {
+      font-size: 24px;
+      max-width: 300px; }
+    .modal1.active .text {
+      font-size: 18px; }
+    .modal1.active .btn_contact span {
+      font-size: 20px; } }
