@@ -120,9 +120,9 @@ body {
   transition-property: transform;
   box-sizing: content-box; }
 
-@media screen and (min-width: 769px) {
-  #main_slider > .swiper-wrapper {
-    transition: transform 0.05s ease !important; } }
+@media screen and (min-width: 1025px) {
+  #main_slider > .swiper-wrapper.mousewheel {
+    transition-duration: 0.8s !important; } }
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -743,7 +743,8 @@ header {
       width: 100%;
       background: rgba(255, 0, 0, 0);
       position: relative;
-      z-index: 23; }
+      z-index: 23;
+      height: 100%; }
       #s4 .content .swiper_s4 .swiper-slide {
         background: transparent; }
         #s4 .content .swiper_s4 .swiper-slide .flex {
@@ -1237,7 +1238,7 @@ header {
       top: 474px;
       left: 1117px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header {
     margin-top: 16px;
     padding: 0 24px;

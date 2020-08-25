@@ -144,10 +144,10 @@ body {
 	transition-property: transform;
 	box-sizing: content-box;
 }
-@media screen and (min-width: 769px) {
-	#main_slider > .swiper-wrapper {
-		transition: transform 0.05s ease !important;
-	}
+@media screen and (min-width: 1025px) {
+	#main_slider > .swiper-wrapper.mousewheel {
+  transition-duration: 0.8s !important;
+}
 }
 
 .swiper-container {
@@ -969,6 +969,7 @@ header {
 			background: rgba(255,0,0,0);
 			position: relative;
 			z-index: 23;
+			height: 100%;
 			.swiper-slide {
 				background: transparent;
 
@@ -1621,8 +1622,8 @@ header {
 		}
 	}
 }
-// tablet 768px x 1024px
-@media only screen and (max-width: 768px) {
+// tablet 1024px x 1366
+@media only screen and (max-width: 1024px) {
 
 	header {
 		margin-top: 16px;

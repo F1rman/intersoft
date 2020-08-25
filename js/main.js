@@ -2,6 +2,7 @@ $(document).ready(() => {
   let options = {
       mousewheel: true,
       spaceBetween: 800,
+      speed:800,
       hashNavigation: {
         replaceState: true,
         watchState: true,
@@ -10,22 +11,22 @@ $(document).ready(() => {
       direction: 'horizontal',
       freeMode:true,
       mousewheel:{
-        sensitivity: 2,
+        sensitivity: 5,
       },
       simulateTouch:false,
       keyboardControl: true,
 mousewheelControl: true,
 mousewheelForceToAxis: true,
 mousewheelReleaseOnEdges: false,
-freeModeSticky: true,
+// freeModeSticky: true,
 
   }
   let options_s4 = {
-    nested: true,
     autoHeight: true,
     spaceBetween: 100,
     slidesPerView: 3,
     centeredSlides: true,
+    simulateTouch:false,
     mousewheel: true,
     parallax: true,
     direction: 'horizontal',
@@ -35,7 +36,7 @@ freeModeSticky: true,
     // freeMode:true
   }
 
-  if ($(window).width()<=768 && $(window).width()>480) {
+  if ($(window).width()<=1024 && $(window).width()>480) {
     console.log('tablet');
      options = {
         spaceBetween: 800,
@@ -43,10 +44,9 @@ freeModeSticky: true,
           replaceState: true,
           watchState: true,
         },
-        nested:true,
         direction: 'horizontal',
         freeMode:true,
-  freeModeSticky: true,
+  // freeModeSticky: true,
 
     }
      options_s4 = {
@@ -54,7 +54,9 @@ freeModeSticky: true,
       spaceBetween: 100,
       slidesPerView: 1,
       centeredSlides: true,
+      allowTouchMove:true,
       parallax: true,
+      nested:true,
       direction: 'horizontal',
 
 
@@ -105,11 +107,11 @@ function changeDirection() {
 }
 $( window ).resize(function() {
 console.log($(window).width());
-if ($(window).width()>768) {
+if ($(window).width()>1024) {
   console.log('desk');
 
 }
-if ($(window).width()>480 && $(window).width()<768) {
+if ($(window).width()>480 && $(window).width()<1024) {
 
 }
 if ($(window).width()<480){
@@ -130,14 +132,53 @@ if ($(window).width()<480){
 
 }
 });
+if ($(window).width()<480){
 
+
+}
   active_menu()
+  if ($(window).width()>480 && $(window).width()<1024) {
 
+  swiper.on('touchStart', ()=>{
+    if (swiper.activeIndex == 3) {
+      swiper.slideTo(3,1200,false)
+    }
+    if (swiper.activeIndex == 3 && swiper_s4.activeIndex != swiper_s4.slides.length-1 && swiper_s4.activeIndex != 0) {
+      swiper.slideTo(3,1200,false)
+      swiper.allowSlideNext = false
+      swiper.allowSlidePrev = false
+    }
+  })
+  swiper_s4.on('touchStart', ()=>{
+    if (swiper.activeIndex == 3 && swiper_s4.activeIndex != swiper_s4.slides.length-1 && swiper_s4.activeIndex != 0) {
+      swiper.slideTo(3,1200,false)
+      swiper.allowSlideNext = false
+      swiper.allowSlidePrev = false
+
+    }
+
+    if (swiper_s4.activeIndex == swiper_s4.slides.length-1) {
+      console.log('last s4 slide');
+      swiper.allowSlideNext = true
+      swiper.allowSlidePrev = true
+    }
+    if (swiper_s4.activeIndex == 0) {
+      swiper.allowSlideNext = true
+      swiper.allowSlidePrev = true
+      console.log('first s4 slide');
+    }
+
+
+  })
+}
+
+if ($(window).width()>1024) {
     swiper_s4.on('slideChangeTransitionStart', function() {
       console.log(swiper_s4.slides.length);
       console.log(swiper_s4.activeIndex);
       console.log('slideChangeTransitionStart');
       swiper.mousewheel.disable();
+      swiper.slideTo(3,1200,false)
 
 
       // if (swiper_s4.activeIndex>0 && swiper_s4.activeIndex < swiper_s4.slides.length-1) {
@@ -146,8 +187,7 @@ if ($(window).width()<480){
       // }
 
     });
-
-    swiper_s4.on('slidePrevTransitionEnd', function() {
+swiper_s4.on('slidePrevTransitionEnd', function() {
       console.log(swiper_s4.slides.length);
       console.log(swiper_s4.activeIndex);
       if (swiper_s4.activeIndex == 0) {
@@ -163,19 +203,23 @@ if ($(window).width()<480){
       }
 
     });
-  swiper.on('slideChange', function() {
-    active_menu()
-    if (swiper.activeIndex == 3) {
-      console.log(swiper.activeIndex, 'swiper.activeIndex');
-      swiper.mousewheel.disable();
-      console.log('disable big slide');
-      // swiper.mousewheel.disable();
-      // swiper_s4.mousewheel.enable();
+
+      console.log('desk');
+      swiper.on('slideChange', function() {
+        active_menu()
+        if (swiper.activeIndex == 3) {
+          console.log(swiper.activeIndex, 'swiper.activeIndex');
+          swiper.slideTo(3,1200,false)
+          console.log('disable big slide');
+          // swiper.mousewheel.disable();
+          // swiper_s4.mousewheel.enable();
+        }
+        else {
+          swiper.mousewheel.enable();
+        }
+      });
     }
-    else {
-      swiper.mousewheel.enable();
-    }
-  });
+
 
   function active_menu() {
     $('#menu  a').removeClass("active");
@@ -203,6 +247,21 @@ if ($(window).width()<480){
     swiper_s4.slideNext();
 
   })
+  $('.btn_contact').click(() => {
+    swiper.allowSlideNext = true
+    swiper.allowSlidePrev = true
+    swiper.slideTo(6,1200,false)
+    $('.modal1').removeClass('active')
+
+  })
+  $('.connect_link').click(() => {
+    swiper.allowSlideNext = true
+    swiper.allowSlidePrev = true
+    swiper.slideTo(6,1200,false)
+    $('.modal1').removeClass('active')
+  })
+
+
   $('.close').click(function() {
     $('.modal1').removeClass('active')
   });
@@ -243,7 +302,19 @@ if ($(window).width()<480){
     $(this).addClass("active");
   });
 
+  function onMouseWheel(e) {
+    console.log(e);
+    clearTimeout($.data(this, 'timer'));
 
+    $(".swiper-wrapper").addClass('mousewheel');
+
+    $.data(this, 'timer', setTimeout( function () {
+      $(".swiper-wrapper").removeClass('mousewheel')
+
+    }, 250));
+  };
+  window.addEventListener( 'mousewheel', onMouseWheel, false )
+  window.addEventListener( 'DOMMouseScroll', onMouseWheel, false )
 
 
 })
