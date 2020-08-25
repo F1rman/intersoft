@@ -1753,7 +1753,7 @@ header {
 
   #s2 {
     margin-left: 0;
-    width: 100%;
+    width: 100% !important;
     margin-top: -200px;
     height: calc(100% + 200px) !important; }
     #s2 .content {
@@ -1774,33 +1774,33 @@ header {
             padding: 0;
             margin-bottom: 20px; }
       #s2 .content .c4 {
-        top: 172px;
+        top: 72px;
         left: 100px; }
       #s2 .content .c1 {
         left: 0;
         display: none; }
       #s2 .content .c2 {
-        top: 21px;
+        top: -81px;
         width: 262px;
         height: 250px;
         left: -100px;
         bottom: inherit; }
       #s2 .content .c3 {
-        top: -50px;
+        top: -150px;
         width: 110px;
         left: 0; }
       #s2 .content .c5 {
-        left: 188px;
+        left: 52%;
         width: 164px;
         height: 584px;
         top: 188px; }
       #s2 .content .c6 {
-        left: 160px;
+        left: 44%;
         width: 250px;
         top: 156px;
         height: 201px; }
       #s2 .content .c7 {
-        left: 287px;
+        left: 80%;
         top: 260px; }
       #s2 .content .c8 {
         left: -23px;
@@ -1815,7 +1815,7 @@ header {
 
   #s3 {
     margin-left: 0;
-    width: 100%;
+    width: 100% !important;
     height: calc(100% + 200px) !important;
     margin-top: -200px; }
     #s3 .content {
@@ -1837,13 +1837,16 @@ header {
         top: 0;
         z-index: 1;
         left: -177px; }
+      #s3 .content .c10 {
+        display: none; }
       #s3 .content .c6 {
         display: none; }
       #s3 .content .c12 {
         left: -100px;
         top: 342px; }
       #s3 .content .c3 {
-        top: 614px;
+        bottom: 0;
+        top: inherit;
         left: 33px; }
       #s3 .content .c8 {
         left: 14px;
@@ -1851,10 +1854,10 @@ header {
         height: 44px;
         top: 650px; }
       #s3 .content .c4 {
-        left: 20px;
+        left: calc(50% - 156px);
         width: 312px;
         height: 566px;
-        top: 458px; }
+        top: 508px; }
 
   #s4 {
     width: 100% !important;
@@ -1985,8 +1988,8 @@ header {
       #s6 .content .illustration {
         width: 109%;
         z-index: 32;
-        height: 374px;
-        top: 505px;
+        height: 474px;
+        top: 555px;
         left: -30px;
         background-size: cover;
         background-position: right; }
