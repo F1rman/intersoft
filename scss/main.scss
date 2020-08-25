@@ -1902,11 +1902,11 @@ header {
 			}
 
 			.c5 {
-				top: 771px;
+				top: 75%;
 			}
 
 			.c1 {
-				left: 0;
+				    left: -179px;
 			}
 
 			.c2 {
@@ -2345,7 +2345,7 @@ header {
 		margin-top: -800px;
 		margin-right: 0;
 		margin-left: 0;
-		height: calc(100% + 800px) !important;
+		height: calc(100% + 1000px) !important;
 		width: 100% !important;
 
 		.wrapper {
@@ -2408,6 +2408,8 @@ header {
 	#s2 {
 		margin-left: 0;
 		width: 100%;
+		margin-top: -200px;
+		height: calc(100% + 200px) !important;
 
 		.content {
 			z-index: 3;
@@ -2497,7 +2499,8 @@ header {
 	#s3 {
 		margin-left: 0;
 		width: 100%;
-
+		height: calc(100% + 200px) !important;
+	margin-top: -200px;
 		.content {
 			margin: 0;
 			width: 100%;
@@ -2565,7 +2568,8 @@ left: -177px;
 	#s4 {
 		width: 100% !important;
 		margin: 0;
-
+		height: calc(100% + 200px) !important;
+		margin-top: -200px;
 		.content {
 			width: 100%;
 			margin: 0;
@@ -2647,9 +2651,10 @@ left: -177px;
 
 	#s5,
 	#s7 {
+		margin: 0;
 		width: 100% !important;
-		margin: 0 !important;
-
+		height: calc(100% + 200px) !important;
+		margin-top: -200px;
 		.content {
 			width: 100%;
 			margin: 0;
@@ -2714,8 +2719,9 @@ left: -177px;
 
 	#s6 {
 		width: 100% !important;
-		margin: 0 !important;
-
+		margin: 0 ;
+		height: calc(100% + 200px) !important;
+		margin-top: -200px;
 		.content {
 			width: 100%;
 			margin: 0;
@@ -2841,8 +2847,9 @@ left: -177px;
 
 	#s8 {
 		width: 100% !important;
-		margin: 0 !important;
-		height: calc(100% + 800px) !important;
+		margin: 0 ;
+		height: calc(100% + 1000px) !important;
+		margin-top: -200px;
 		.content {
 			width: 100% !important;
 			margin: 0 !important;
