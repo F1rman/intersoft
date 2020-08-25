@@ -11,7 +11,7 @@ $(document).ready(() => {
     direction: 'horizontal',
     freeMode: true,
     mousewheel: {
-      sensitivity: 20,
+      sensitivity: 10,
     },
     simulateTouch: false,
     keyboardControl: true,
