@@ -253,6 +253,7 @@ $(document).ready(() => {
 
     console.log('desk');
     swiper.on('slideChange', function() {
+
       active_menu()
       if (swiper.activeIndex == 3) {
         console.log(swiper.activeIndex, 'swiper.activeIndex');
