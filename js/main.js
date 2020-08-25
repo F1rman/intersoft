@@ -227,7 +227,6 @@ $(document).ready(() => {
       swiper.mousewheel.disable();
       swiper.slideTo(3, 1200, false)
 
-
       // if (swiper_s4.activeIndex>0 && swiper_s4.activeIndex < swiper_s4.slides.length-1) {
       //   swiper.mousewheel.disable();
       //   console.log('disable big slide');
@@ -253,13 +252,20 @@ $(document).ready(() => {
 
     console.log('desk');
     swiper.on('slideChange', function() {
+      swiper_s4.mousewheel.disable();
 
       active_menu()
       if (swiper.activeIndex == 3) {
+        swiper.mousewheel.disable();
+        setTimeout(function () {
+          swiper.mousewheel.enable();
+          swiper_s4.mousewheel.enable();
+          console.log('asd');
+        }, 1000);
         console.log(swiper.activeIndex, 'swiper.activeIndex');
         swiper.slideTo(3, 1200, false)
         console.log('disable big slide');
-        // swiper.mousewheel.disable();
+
         // swiper_s4.mousewheel.enable();
       } else {
         swiper.mousewheel.enable();
